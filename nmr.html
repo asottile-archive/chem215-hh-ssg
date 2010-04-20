@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>NMR Correlations</title>
+		<link rel="stylesheet" type="text/css" href="mainlayout.css">
+		<script type="text/javascript">
+
+		function highlighthnmr(hname) {
+
+			document.getElementById('spectra'+hname).src='images/hnmr/hnmr'+hname+'hl.png';
+			
+			if(hname=="6") {
+				document.getElementById('structure6-1').src='images/hnmr/shnmr6-1hl.png';
+				document.getElementById('structure6-2').src='images/hnmr/shnmr6-2hl.png';
+			} else {
+				document.getElementById('structure'+hname).src='images/hnmr/shnmr'+hname+'hl.png';
+			}
+
+		if(hname=="1") {
+
+			infotext = "7.88 (bs, 1 H, D<sub>2</sub>O exchangeable)<br> The only possible acidic H";
+
+		} else if (hname=="2") {
+			
+			infotext = "7.71 (d, J = 8.0 Hz, 1 H)<br>Aromatic Doublet";
+
+		} else if (hname=="3") {
+
+			infotext = "7.28 (d, J = 8.0 Hz, 1 H)<br>Aromatic Doublet";
+
+		} else if (hname=="4") {
+
+			infotext = "7.13 - 7.05 (m, 2 H)<br>Aromatic Multiplet";
+
+		} else if (hname=="5") {
+
+			infotext = "6.08 (dd, J = 17.4, 10.2 Hz, 1 H)<br>sp<sup>2</sup> Single H";
+
+		} else if (hname=="6") {
+
+			infotext = "5.23 (d, J= 17.4 Hz, 1 H), 5.21 (d, J = 10.2 Hz, 1 H)<br>Overlapping sp<sup>2</sup> 2-Bond neighbors";
+
+		} else if (hname=="7") {
+
+			infotext = "4.04 (d, J = 12.0 Hz, 1 H)<br>Single Neighbor";
+
+		} else if (hname=="8") {
+
+			infotext = "2.37 (td, J = 12.0, 2.4 Hz, 1 H), 2.30 (d, J = 13.8 Hz, 1 H)<br>Overlapping cyclohexane Hs";
+
+		} else if (hname=="9") {
+
+			infotext = "1.97 (qd, J = 13.2, 4.2 Hz, 1 H)<br>Single Hydrogen, many unequivalent neighbors";
+
+		} else if (hname=="10") {
+
+			infotext = "1.78 (d, J = 12.6 Hz, 1 H), 1.70 (td, J = 13.2, 4.2 Hz, 1 H)<br>Overlapping cyclohexane Hs";
+
+		} else if (hname=="11") {
+
+			infotext = "1.37 (s, 3 H)<br>Equivalent Methyl Hs";
+
+		} else if (hname=="12") {
+
+			infotext = "1.26 (s, 3 H)<br>Equivalent Methyl Hs";
+
+		} else if (hname=="13") {
+
+			infotext = "1.13 (s, 3 H)<br>Equivalent Methyl Hs";
+
+		}
+
+			document.getElementById('nmrdesc').innerHTML = infotext;
+
+		}
+
+		function unhighlighthnmr(hname) {
+
+			document.getElementById('spectra'+hname).src='images/hnmr/hnmr'+hname+'.png';
+			
+			if(hname=="6") {
+				document.getElementById('structure6-1').src='images/hnmr/shnmr6-1.png';
+				document.getElementById('structure6-2').src='images/hnmr/shnmr6-2.png';
+			} else {
+				document.getElementById('structure'+hname).src='images/hnmr/shnmr'+hname+'.png';
+			}
+		
+			document.getElementById('nmrdesc').innerHTML = 'Mouse over a Hydrogen or Peak for more Information';
+
+		}
+		</script>
+	</head>
+<body>
+	<center>
+		<div class="mainBody">
+			<div class="pageTitle">
+				<br>
+				<img src="images/title.png" alt="Anthony Sottile" title="Anthony Sottile">
+				
+			</div>
+			<div class="contentBody">
+			
+				<div class="imageleft">
+					<center>
+						<a href="index.html"><img src="images/home.png" alt="Home"></a><br><br>
+						<a href="nmr.html"><img src="images/nmr.png" alt="NMR"></a><br><br>
+						<a href="procedure.html"><img src="images/procedure.png" alt="Procedure"></a><br><br>
+						<a href="mechanism.html"><img src="images/mechanism.png" alt="Mechanism"></a><br><br>
+						<a href="reference.html"><img src="images/reference.png" alt="References"></a><br><br>
+						<a href="leadingq.html"><img src="images/leadingq.png" alt="Leading Question TfOH"></a><br><br>
+						<a href="aboutus.html"><img src="images/aboutus.png" alt="About Us"></a>
+					</center>
+					<div></div>
+				</div>
+
+				<div class="subtitle">
+					<img src="images/nmrsub.png" alt="NMR">
+					<div></div>
+				</div>
+<br><br>
+<table class="tableclass" style="clear:right;"><tr><td rowspan="2" width="320">
+<img src="images/hnmr/shnmr4.png" alt="4" onmouseover="highlighthnmr('4');" onmouseout="unhighlighthnmr('4');" id="structure4"><img src="images/hnmr/shnmr3.png" alt="3" onmouseover="highlighthnmr('3');" onmouseout="unhighlighthnmr('3');" id="structure3"><img src="images/hnmr/shnmr5.png" alt="5" onmouseover="highlighthnmr('5');" onmouseout="unhighlighthnmr('5');" id="structure5"><img src="images/hnmr/shnmr6-1.png" alt="6" onmouseover="highlighthnmr('6');" onmouseout="unhighlighthnmr('6');" id="structure6-1"><br>
+
+<img src="images/hnmr/shnmr2.png" alt="2" onmouseover="highlighthnmr('2');" onmouseout="unhighlighthnmr('2');" id="structure2"><img src="images/hnmr/shnmr01.png" alt="01"><img src="images/hnmr/shnmr7.png" alt="7" onmouseover="highlighthnmr('7');" onmouseout="unhighlighthnmr('7');" id="structure7"><img src="images/hnmr/shnmr11.png" alt="11" onmouseover="highlighthnmr('11');" onmouseout="unhighlighthnmr('11');" id="structure11"><img src="images/hnmr/shnmr6-2.png" alt="6" onmouseover="highlighthnmr('6');" onmouseout="unhighlighthnmr('6');" id="structure6-2"><br>
+
+<img src="images/hnmr/shnmr1.png" alt="1" onmouseover="highlighthnmr('1');" onmouseout="unhighlighthnmr('1');" id="structure1"><img src="images/hnmr/shnmr12.png" alt="12" onmouseover="highlighthnmr('12');" onmouseout="unhighlighthnmr('12');" id="structure12"><img src="images/hnmr/shnmr13.png" alt="13" onmouseover="highlighthnmr('13');" onmouseout="unhighlighthnmr('13');" id="structure13"><img src="images/hnmr/shnmr9.png" alt="9" onmouseover="highlighthnmr('9');" onmouseout="unhighlighthnmr('9');" id="structure9"><img src="images/hnmr/shnmr10.png" alt="10" onmouseover="highlighthnmr('10');" onmouseout="unhighlighthnmr('10');" id="structure10"><img src="images/hnmr/shnmr8.png" alt="8" onmouseover="highlighthnmr('8');" onmouseout="unhighlighthnmr('8');" id="structure8">
+
+</td><td height="1%"><b>HNMR Correlations</b></td></tr>
+<tr><td width="175"><div id="nmrdesc">Mouse over a Hydrogen or Peak for more Information</div></td></tr></table>
+<table width="100%" class="tableclass"><tr><td>
+<img src="images/hnmr/hnmr1.png" alt="1" onmouseover="highlighthnmr('1');" onmouseout="unhighlighthnmr('1');" id="spectra1"><img src="images/hnmr/hnmr2.png" alt="2" onmouseover="highlighthnmr('2');" onmouseout="unhighlighthnmr('2');" id="spectra2"><img src="images/hnmr/hnmr3.png" alt="3" onmouseover="highlighthnmr('3');" onmouseout="unhighlighthnmr('3');" id="spectra3"><img src="images/hnmr/hnmr4.png" alt="4" onmouseover="highlighthnmr('4');" onmouseout="unhighlighthnmr('4');" id="spectra4"><img src="images/hnmr/hnmr5.png" alt="5" onmouseover="highlighthnmr('5');" onmouseout="unhighlighthnmr('5');" id="spectra5"><img src="images/hnmr/hnmr6.png" alt="6" onmouseover="highlighthnmr('6');" onmouseout="unhighlighthnmr('6');" id="spectra6"><img src="images/hnmr/hnmr7.png" alt="7" onmouseover="highlighthnmr('7');" onmouseout="unhighlighthnmr('7');" id="spectra7"><img src="images/hnmr/hnmr8.png" alt="8" onmouseover="highlighthnmr('8');" onmouseout="unhighlighthnmr('8');" id="spectra8"><img src="images/hnmr/hnmr9.png" alt="9" onmouseover="highlighthnmr('9');" onmouseout="unhighlighthnmr('9');" id="spectra9"><img src="images/hnmr/hnmr10.png" alt="10" onmouseover="highlighthnmr('10');" onmouseout="unhighlighthnmr('10');" id="spectra10"><img src="images/hnmr/hnmr11.png" alt="11" onmouseover="highlighthnmr('11');" onmouseout="unhighlighthnmr('11');" id="spectra11"><img src="images/hnmr/hnmr12.png" alt="12" onmouseover="highlighthnmr('12');" onmouseout="unhighlighthnmr('12');" id="spectra12"><img src="images/hnmr/hnmr13.png" alt="13" onmouseover="highlighthnmr('13');" onmouseout="unhighlighthnmr('13');" id="spectra13"><img src="images/hnmr/hnmr14.png" alt="14"><img src="images/hnmr/hnmr15.png" alt="15">
+</td></tr></table>
+<br><br>
+			</div>
+		</div>
+	</center>
+</body>
+</html>
